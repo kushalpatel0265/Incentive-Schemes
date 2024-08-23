@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incentive Schemes Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Incentive Schemes Calculator</h1>
+        <form id="incentiveForm">
+            <label for="schemeSelect">Select Incentive Plan:</label>
+            <select id="schemeSelect" name="schemeSelect" onchange="updateForm()">
+                <option value="">-- Select an Incentive Plan --</option>
+                <option value="halsey">Halsey Premium Plan</option>
+                <option value="halseyWeir">Halsey-Weir Premium Scheme</option>
+                <option value="rowan">Rowan Plan</option>
+                <option value="taylor">Taylor’s Differential Piece Rate System</option>
+                <option value="merrick">Merrick Differential Piece Rate Plan</option>
+                <option value="gantt">Gantt Task and Bonus Plan</option>
+                <option value="emerson">Emerson’s Efficiency Plan</option>
+            </select>
+
+            <div id="inputFields">
+                <!-- Dynamic input fields will be inserted here based on the selection -->
+            </div>
+
+            <button type="button" id="calculateButton" onclick="calculateBonus()">Calculate Bonus</button>
+
+            <p id="result"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
